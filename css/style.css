@@ -114,8 +114,11 @@ img.logo.xKom {
 .wrap-header i {
   margin-bottom: 5px;
 }
-.wrap-header {
+.wrap-header1{
   color: #fff;
+}
+.wrap-header {
+  /* color: #fff; */
   margin-right: 12px;
 }
 .wrap-header:hover {
@@ -185,6 +188,7 @@ header.sticky ul li a {
   color: #000;
 }
 
+
 header.sticky ul li a:hover {
   color: #13b83c;
 }
@@ -252,6 +256,9 @@ li i {
   color: #fff;
 }
 .shadow-light header.sticky {
+  color: #fff;
+}
+.shadow-light .wrap-header{
   color: #fff;
 }
 
