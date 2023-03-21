@@ -1,0 +1,194 @@
+.komp1{
+  width: 526px;
+  height: 423px;
+}
+.text-komp {
+  display: flex;
+  font-size: 19px;
+  max-width: 80%;
+  height: 30px;
+  flex-direction: column;
+}
+.cennik {
+  float: right;
+  margin-bottom: 5%;
+  width: 40%;
+  height: 150px;
+}
+.price {
+  float: right;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+/* dodaj do koszyka przycik */
+
+.shopButton {
+  float: right;
+  background-color:rgb(17, 158, 0);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  width: 160px;
+  transition: 0.2s;
+}
+.shopButton:hover {
+  box-shadow: 2px 2px 24px #a2b3a0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.krotkitext {
+  font-size: 17px;
+  width: 385px;
+  height: 100px;
+}
+.krotkitext b {
+  color: rgb(6, 115, 216);
+}
+.text {
+  display: flex;
+}
+.specyfikacja {
+  position: absolute;
+  margin-top: 5%;
+  width: 80%;
+}
+.specyfikacja h2 {
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+.sprzet {
+  width: 50%;
+  float: left;
+}
+.jakisprzet {
+  width: 50%;
+  float: left;
+}
+.panelPC {
+  display: flex;
+  height: 375px;
+  margin-top: -10px;
+}
+div#splide01-track {
+  margin-top: 15%;
+}
+.product_mini_decription {
+  display: flex;
+  margin-top: 40px;
+  width: 15 0px;
+}
+.jasny {
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  font-size: 14px;
+  color: rgb(26, 26, 26);
+  font-weight: normal;
+  border-top: 1px solid rgb(235, 235, 235);
+}
+.ciemny {
+  display: flex;
+  width: 80%;
+  padding: 20px ;
+  font-size: 14px;
+  color: rgb(26, 26, 26);
+  font-weight: normal;
+  background-color: #bdbaba44;
+  border-top: 1px solid rgb(235, 235, 235);
+}
+/* SPONSOR */
+.logo-letyshops {
+  width: 180px;
+}
+.sponsor {
+  float: right;
+  margin-right: 16%;
+  margin-top: 2%;
+  border-radius: 18px;
+  width: 40%;
+  height: 100%;
+}
+#sponsor-text {
+  width: 34%;
+  padding: 0px 12px 0 12px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.sponsor-main {
+  color: #000;
+  font-weight: 400;
+}
+.yellow-text {
+  color: rgb(255, 251, 2);
+  text-shadow: 0px 0px 6px  rgb(0, 0, 0);
+  font-weight: bold;
+}
+/* oPIS */
+.description {
+  margin-top: 20px;
+  width: 80%;
+  height: 230px;
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+.text-desc {
+  margin-top: 5%;
+  /* margin-left: 6.6%; */
+}
+/* delivery-box */
+/* .container-delivery {
+  float: right;
+  margin-right: 120px;
+  border: 1px solid black;
+  width: 500px;
+  height: 180px;
+} */
+/* PRODUCT IMG SLIDER */
+.slider {
+  margin-top: 10px;
+  width: 500px;
+}
+
+.splide__slide img {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  transition: .2s linear;
+}
+.splide__slide img:hover{
+  transform: scale(1.02);
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(216, 216, 216, 0.726);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.splide__list {
+  display: flex;
+}
+.slider .pop-up-img{
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(0, 0, 0, .7);
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.slider .pop-up-img span{
+  position: absolute;
+  top: 0;right: 20px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}

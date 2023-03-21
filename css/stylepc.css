@@ -1,0 +1,129 @@
+.bodybg{
+  background: url(./img/Group_1.svg);
+  background-size: cover;
+}
+.container-cardk {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+  .container-cardk .cardk {
+    position: relative;
+    width: 2000px;
+    height: 290px;
+    margin: 30px;
+    border: 0.5px solid #0000008a;
+    border-radius: 15px;
+    background: rgba(255,255,255);
+    box-shadow: 0 1px 19.4px 0.6px rgb(14 26 53 / 30%);
+    transition: 0.4s;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.5);    
+    border-left: 1px solid rgba(255, 255, 255, 0.5);     */
+    backdrop-filter: blur(5px);
+  }
+  .contentk{
+    margin-right: 160px;
+  }
+  .container-cardk .cardk:hover {
+    transition: 0.4s;
+    box-shadow: 0 1px 59.4px 0.6px rgb(14 26 53 / 30%);
+  }
+  /* .container-cardk .cardk .content {
+    margin-bottom: 4%;
+    margin-right: 30%;
+    padding-top: 30px;
+    transition: 0.4s;
+  } */
+  .container-cardk .cardk .contentk h3 {
+    font-size: 1.9em;
+    color: #39b813;
+    z-index: 1;
+    width: 630px;
+  }
+  .container-cardk .cardk .contentk p {
+    color: #000000;
+    margin-top: 30px;
+    font-weight: 300;
+  }
+  .container-cardk .cardk .contentk a {
+    position: relative;
+    display: inline-block;  
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.4s;
+  }
+  /* .container-cardk .cardk .content a:hover {
+    box-shadow: 0 0 2em rgba(95, 51, 196, 0.678);
+    background-color: rgb(59, 37, 138);
+    transition: 0.4s;
+  } */
+.nazwa{
+    /* margin-left: 100px; */
+    margin-top: 35px;
+    width: 120%;
+  }
+  .cena{
+    margin-left: 23%;
+    margin-bottom: 2.4%;
+  }
+  .cardk-img {
+    width: 220px;
+    margin-left: 20%;
+  }
+  #cardk-img {
+    width: 420px; 
+  }
+  
+  .text-cardk {
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 10px;
+    width: 85%;
+    color: #ff0000;
+  }
+  /* h2{
+    color: white;
+    text-decoration: none;
+
+  } */
+  .cena{
+text-align: right;
+  }
+  /* FOOTER */
+.page_numbers{
+  display: flex;
+  align-content: center;
+    justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.page_nr{
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 2px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: default;
+    color: rgb(26, 26, 26);
+    user-select: none;
+    border: 1px solid rgb(77, 77, 77);
+    height: 40px;
+    padding: 14px 0px;
+    line-height: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
