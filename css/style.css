@@ -114,30 +114,25 @@ img.logo.xKom {
 .wrap-header i {
   margin-bottom: 5px;
 }
-<<<<<<< HEAD
-.wrap-header {
-=======
-.wrap-header1{
-  color: #fff;
-}
 .wrap-header {
   /* color: #fff; */
->>>>>>> 1e172639e97cf71e6b8c23c74ef202dba24daad3
   margin-right: 12px;
 }
 .wrap-header:hover {
   color: #3787ff;
 }
-.header-main-wrap {
+/* 1 */
+.wrap-header1 i {
+  margin-bottom: 5px;
+}
+.wrap-header1 {
   color: #fff;
   margin-right: 12px;
 }
-.header-main-wrap:hover {
+.wrap-header1:hover {
   color: #3787ff;
 }
-.header-main-wrap i {
-  margin-bottom: 5px;
-}
+/* next */
 .logo {
   width: 360px;
   padding: 12px;
