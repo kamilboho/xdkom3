@@ -115,11 +115,20 @@ img.logo.xKom {
   margin-bottom: 5px;
 }
 .wrap-header {
-  color: #fff;
   margin-right: 12px;
 }
 .wrap-header:hover {
   color: #3787ff;
+}
+.header-main-wrap {
+  color: #fff;
+  margin-right: 12px;
+}
+.header-main-wrap:hover {
+  color: #3787ff;
+}
+.header-main-wrap i {
+  margin-bottom: 5px;
 }
 .logo {
   width: 360px;
