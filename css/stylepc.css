@@ -2,11 +2,16 @@
   background: url(./img/Group_1.svg);
   background-size: cover;
 }
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+header.sticky {
+  border-bottom: 0;
+}
 .comp-h1 {
   font-size: 34px;
-  border-top: 2px solid black;
   text-align: center;
-  padding: 54px 0 34px 0px;
+  padding: 30px 0;
 }
 .blue-text {
   color: slateblue;
@@ -19,115 +24,66 @@
   flex-wrap: wrap;
   z-index: 1;
 }
-
+.content {
+  margin-top: 125px;
+}
 .container-cardk .cardk {
   position: relative;
-  width: 2000px;
-  height: 290px;
+  width: 100%;
   margin: 30px;
+  padding: 30px;
   border: 0.5px solid #0000008a;
   border-radius: 15px;
   background: rgba(255, 255, 255);
   box-shadow: 0 1px 19.4px 0.6px rgb(14 26 53 / 30%);
   transition: 0.4s;
-  overflow: hidden;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  /* border-top: 1px solid rgba(255, 255, 255, 0.5);    
-    border-left: 1px solid rgba(255, 255, 255, 0.5);     */
-  backdrop-filter: blur(5px);
 }
-
-.contentk {
-  margin-right: 160px;
+.container-cardk .cardk .contentk {
+  width: 100%;
+  margin-left: 30px;
+  position: relative;
 }
-
 .container-cardk .cardk:hover {
   transition: 0.4s;
   box-shadow: 0 1px 59.4px 0.6px rgb(14 26 53 / 30%);
 }
-
-/* .container-cardk .cardk .content {
-    margin-bottom: 4%;
-    margin-right: 30%;
-    padding-top: 30px;
-    transition: 0.4s;
-  } */
 .container-cardk .cardk .contentk h3 {
   font-size: 1.9em;
   color: #39b813;
-  z-index: 1;
-  width: 630px;
 }
-
 .container-cardk .cardk .contentk p {
   color: #000000;
-  margin-top: 30px;
   font-weight: 300;
 }
-
 .container-cardk .cardk .contentk a {
-  position: relative;
-  display: inline-block;
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: 500;
   transition: 0.4s;
 }
-
-/* .container-cardk .cardk .content a:hover {
-    box-shadow: 0 0 2em rgba(95, 51, 196, 0.678);
-    background-color: rgb(59, 37, 138);
-    transition: 0.4s;
-  } */
-.nazwa {
-  /* margin-left: 100px; */
-  margin-top: 35px;
-  width: 120%;
+.nazwa h2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
-
-.cena {
-  margin-left: 23%;
-  margin-bottom: 2.4%;
-}
-
 .cardk-img {
-  width: 220px;
-  margin-left: 20%;
+  width: 300px;
 }
-
-#cardk-img {
-  width: 420px;
-}
-
 .text-cardk {
-  margin-left: 35%;
-  margin-top: 3%;
-  margin-bottom: 10px;
-  width: 85%;
   color: #ff0000;
 }
-
-/* h2{
-    color: white;
-    text-decoration: none;
-
-  } */
 .cena {
   text-align: right;
 }
-
 .page_numbers {
   display: flex;
-  align-content: center;
   justify-content: center;
   list-style-type: none;
-  padding: 0px;
-  padding-bottom: 18px;
-  margin: 0px;
 }
-
 .page_nr {
   display: flex;
   justify-content: center;
@@ -135,10 +91,73 @@
   margin: 0px 2px;
   width: 40px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 10px;
   color: rgb(51, 51, 51);
   border: 1px solid rgb(0, 0, 0);
-  padding: 0px 14px 0px 14px;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 880px) {
+  .container-cardk .cardk {
+    margin: 15px 10px;
+  }
+  .content {
+    margin-top: 90px;
+  }
+  .comp-h1 {
+    font-size: 1.5rem;
+    padding: 20px 0;
+  }
+  .page_numbers{
+    margin-bottom: 20px;
+  }
+  .nazwa h2 {
+    font-size: 1.4rem;
+  }
+  .nazwa p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 705px) {
+  .container-cardk .cardk {
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+  .cardk-img {
+    width: 200px;
+  }
+  .container-cardk .cardk .contentk {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content {
+    margin-top: 60px;
+  }
+  .comp-h1 {
+    font-size: 1.2rem;
+  }
+  
+  .page_nr {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-cardk .cardk {
+    padding: 20px;
+  }
+  .nazwa h2 {
+    font-size: 1rem;
+  }
+  .nazwa p {
+    font-size: 0.8rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
 }

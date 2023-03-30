@@ -1,12 +1,15 @@
 document.body.style = "background-color: var(--bs-dark);transition: 0.5s;";
-const sun = "/img/sun.svg";
-const moon = "/img/moon.svg";
+const sun = "../img/sun.svg";
+const moon = "../img/moon.svg";
 
 var theme = "dark";
 const root = document.querySelector(":root");
 const container = document.getElementsByClassName("theme-container")[0];
 const themeIcon = document.getElementById("theme-icon");
+const logo = document.querySelector(".logo-main img")
 container.addEventListener("click", setTheme);
+
+
 
 function setTheme() {
   switch (theme) {
@@ -20,6 +23,20 @@ function setTheme() {
       break;
   }
 }
+function SetLogo(){
+  const width = window.innerWidth
+  if(width<881){
+    if(theme==="dark"){logo.src = "../img/logo__ciemne.png";}
+    if(theme==="light"){logo.src = "../img/logo__jasne.png";}
+    }
+  else{
+    if(theme==="dark"){logo.src = "../img/logo.png";}
+    if(theme==="light"){logo.src = "../img/logo_jasne.png";}
+  }
+}
+window.addEventListener("resize",SetLogo)
+window.addEventListener("click",SetLogo)
+SetLogo();
 function setLight() {
   root.style.setProperty("--bs-dark", "#212529");
   container.classList.remove("shadow-dark");
@@ -29,7 +46,6 @@ function setLight() {
     container.classList.add("shadow-light");
     document.body.classList.add("shadow-light");
     themeIcon.classList.remove("change");
-    document.getElementsByClassName("xKom")[0].src = "/img/logo_jasne.png";
   }, 30);
   themeIcon.classList.add("change");
   themeIcon.src = sun;
@@ -47,7 +63,6 @@ function setDark() {
     container.classList.add("shadow-dark");
     document.body.classList.add("shadow-dark");
     themeIcon.classList.remove("change");
-    document.getElementsByClassName("xKom")[0].src = "/img/logo.png";
   }, 30);
   themeIcon.classList.add("change");
   themeIcon.src = moon;

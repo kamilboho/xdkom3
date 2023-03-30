@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+span{
+    color: #fad819;
+}
+.opinie {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: auto;
+}
+.ogol {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.ogol .avg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5c5c5c;
+}
+.ogol .avg h4 span {
+  color: #5c5c5c;
+  font-size: 40px;
+}
+.ogol .avg h3{
+    color: #c4c4c4;
+}
+.ogol .stars-list p {
+  margin: 10px 0;
+  letter-spacing: 5px;
+  font-family: "Roboto Mono";
+}
+.ogol .stars-list button {
+  width: 400px;
+  height: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+.ogol .stars-list .off {
+  background: #e9e9e9;
+}
+.ogol .stars-list .on {
+  background: #5c5c5c;
+}
+.users-opinie .opinia {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  max-width: 1000px;
+  justify-content: space-between;
+}
+.users-opinie .opinia .user {
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.users-opinie .opinia .user .user-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.users-opinie .opinia .user .user-name p {
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.users-opinie .opinia .user .user-img img {
+  width: 100%;
+}
+.users-opinie .opinia .user-review {
+  max-width: 750px;
+}
+.users-opinie .opinia .user-review .info {
+  min-width: 100px;
+  max-width: 150px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.users-opinie .opinia .user-review .info .stars {
+  color: #c4c4c4;
+}
+@media only screen and (max-width: 735px) {
+  .ogol {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .ogol .stars-list button {
+    width: 250px;
+  }
+  .users-opinie .opinia {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .ogol .stars-list{
+    width: 100%;
+  }
+  .ogol .stars-list button {
+    width: 60%;
+  }
+}

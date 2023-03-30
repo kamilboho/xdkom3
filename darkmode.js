@@ -29,7 +29,7 @@ function setLight() {
     container.classList.add("shadow-light");
     document.body.classList.add("shadow-light");
     themeIcon.classList.remove("change");
-    document.getElementsByClassName("xKom")[0].src = "/img/logo_jasne.png";
+    // document.getElementsByClassName("xKom")[0].src = "/img/logo_jasne.png";
   }, 30);
   themeIcon.classList.add("change");
   themeIcon.src = sun;
@@ -47,7 +47,7 @@ function setDark() {
     container.classList.add("shadow-dark");
     document.body.classList.add("shadow-dark");
     themeIcon.classList.remove("change");
-    document.getElementsByClassName("xKom")[0].src = "/img/logo_jasne.png";
+    // document.getElementsByClassName("xKom")[0].src = "/img/logo_jasne.png";
   }, 30);
   themeIcon.classList.add("change");
   themeIcon.src = moon;

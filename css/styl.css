@@ -1,87 +1,95 @@
-.komp1{
-  width: 526px;
-  height: 423px;
+.content {
+  margin-top: 150px;
+}
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+header.sticky {
+  border-bottom: 0;
+}
+.img_slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.komp1 {
+  max-width: 300px;
 }
 .text-komp {
   display: flex;
   font-size: 19px;
-  max-width: 80%;
-  height: 30px;
   flex-direction: column;
+  padding: 0 20px;
 }
 .cennik {
-  float: right;
-  margin-bottom: 5%;
-  width: 40%;
-  height: 150px;
+  min-width: 195px;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 10px;
 }
 .price {
-  float: right;
-  padding-bottom: 10px;
   font-size: 28px;
+  text-align: right;
+}
+.narrow_name {
+  display: none;
 }
 /* dodaj do koszyka przycik */
 
 .shopButton {
-  float: right;
-  background-color:rgb(17, 158, 0);
+  background-color: rgb(17, 158, 0);
   color: #fff;
   border: none;
   border-radius: 12px;
   height: 40px;
-  width: 160px;
+  width: 100%;
   transition: 0.2s;
+  cursor: pointer;
 }
 .shopButton:hover {
   box-shadow: 2px 2px 24px #a2b3a0;
   transition: 0.2s;
-  cursor: pointer;
 }
-.krotkitext {
-  font-size: 17px;
-  width: 385px;
-  height: 100px;
+.short_specification {
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0 10px;
 }
-.krotkitext b {
+.short_specification p {
+  padding-bottom: 7px;
+}
+.short_specification b {
   color: rgb(6, 115, 216);
 }
 .text {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .specyfikacja {
-  position: absolute;
-  margin-top: 5%;
-  width: 80%;
 }
-.specyfikacja h2 {
-  font-size: 28px;
-  padding-bottom: 25px;
+.sprzet, .jakisprzet {
+  width: 50%;
 }
 .sprzet {
-  width: 50%;
-  float: left;
+  font-weight: 500;
+  font-size: 16px;
 }
-.jakisprzet {
-  width: 50%;
-  float: left;
-}
+
 .panelPC {
+  width: 100%;
   display: flex;
-  height: 375px;
-  margin-top: -10px;
-}
-div#splide01-track {
-  margin-top: 15%;
+  align-items: flex-start;
+  justify-content: center;
 }
 .product_mini_decription {
-  display: flex;
-  margin-top: 40px;
-  width: 15 0px;
+  width: 100%;
+  padding: 30px 0;
 }
 .jasny {
   display: flex;
-  width: 80%;
-  padding: 20px;
   font-size: 14px;
   color: rgb(26, 26, 26);
   font-weight: normal;
@@ -89,8 +97,6 @@ div#splide01-track {
 }
 .ciemny {
   display: flex;
-  width: 80%;
-  padding: 20px ;
   font-size: 14px;
   color: rgb(26, 26, 26);
   font-weight: normal;
@@ -102,61 +108,48 @@ div#splide01-track {
   width: 180px;
 }
 .sponsor {
-  float: right;
-  margin-right: 16%;
-  margin-top: 2%;
-  border-radius: 18px;
-  width: 40%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
 }
 #sponsor-text {
-  width: 34%;
-  padding: 0px 12px 0 12px;
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
 .sponsor-main {
   color: #000;
   font-weight: 400;
+  text-align: center;
 }
 .yellow-text {
   color: rgb(255, 251, 2);
-  text-shadow: 0px 0px 6px  rgb(0, 0, 0);
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
   font-weight: bold;
 }
 /* oPIS */
 .description {
-  margin-top: 20px;
-  width: 80%;
-  height: 230px;
   border-left: 1px solid black;
-  padding-left: 15px;
+  padding-left: 10px;
 }
-.text-desc {
-  margin-top: 5%;
-  /* margin-left: 6.6%; */
+.text-desc h1, .specyfikacja h1, .opinie h1{
+  padding: 10px;
 }
-/* delivery-box */
-/* .container-delivery {
-  float: right;
-  margin-right: 120px;
-  border: 1px solid black;
-  width: 500px;
-  height: 180px;
-} */
 /* PRODUCT IMG SLIDER */
 .slider {
   margin-top: 10px;
-  width: 500px;
+  max-width: 500px;
+  min-width: 200px;
+  display: flex;
 }
 
 .splide__slide img {
   object-fit: cover;
   object-position: center;
   max-width: 100%;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
-.splide__slide img:hover{
+.splide__slide img:hover {
   transform: scale(1.02);
 }
 
@@ -168,27 +161,86 @@ div#splide01-track {
   padding: 10px;
   border-radius: 5px;
 }
-
 .splide__list {
   display: flex;
 }
-.slider .pop-up-img{
-  position: fixed;
-  top: 0; left: 0;
-  background-color: rgba(0, 0, 0, .7);
-  height: 100%;
-  width: 100%;
-  z-index: 10000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
+
+@media screen and (max-width: 985px) {
+  .container {
+    margin: 0 30px;
+  }
+  .narrow_name {
+    display: block;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .wide_name {
+    display: none;
+  }
+  .text {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .panelPC {
+    justify-content: space-between;
+  }
+  .komp1 {
+    max-width: 500px;
+  }
+  .slider {
+    max-width: 300px;
+    min-width: none;
+  }
+  .cennik{
+    margin-bottom: 10px;
+  }
 }
-.slider .pop-up-img span{
-  position: absolute;
-  top: 0;right: 20px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  z-index: 10000;
+@media screen and (max-width: 905px) {
+  .komp1 {
+    max-width: 300px;
+  }
 }
+@media screen and (max-width: 880px) {
+  
+  .content {
+    margin-top: 115px;
+  }
+}
+@media screen and (max-width: 705px) {
+  
+  .panelPC {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-komp {
+    width: 100%;
+  }
+  .cennik {
+    max-width: none;
+    width: 100%;
+   
+  }
+}
+@media screen and (max-width: 540px) {
+  .content {
+    margin-top: 85px;
+  }
+  .text-komp{
+    padding: 0;
+  }
+  .text-desc h1, .specyfikacja h1, .opinie h1{
+    font-size:1.3rem;
+  }
+    
+  }
+
+@media screen and (max-width: 450px) {
+  .container {
+    margin: 0 15px;
+  }
+  .text{
+    padding: 0;
+  }
+}
+
